@@ -4,7 +4,8 @@
 
 產品介面、資訊架構與操作流程。
 
-[DeviceCare 展示圖](assets/og.png)
+
+![DeviceCare 展示圖](assets/og.png)
 
 ## 內容
 
