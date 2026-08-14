@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087f83">
+  <meta name="description" content="紹氏郎 DeviceCare 儀器行動服務管理系統互動展示版。所有資料皆為虛構範例。">
+  <meta property="og:title" content="紹氏郎 DeviceCare｜互動展示版">
+  <meta property="og:description" content="儀器生命週期、保養排程、工單、雙方簽名與服務統計的響應式管理系統展示。">
+  <meta property="og:image" content="assets/og.png">
+  <title>紹氏郎 DeviceCare｜互動展示版</title>
+  <link rel="icon" href="assets/brand-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-ribbon" role="note"><strong>互動展示環境</strong><span>所有客戶、聯絡人、儀器及工單皆為虛構資料，不連接正式系統。</span></div>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="assets/brand-icon.png" alt="紹氏郎 DeviceCare 圖示">
+        <span><strong>紹氏郎</strong><small>DeviceCare Demo</small></span>
+      </div>
+      <nav aria-label="展示功能">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span>首頁</button>
+        <button class="nav-item" data-view="customers"><span>◎</span>客戶與聯絡人</button>
+        <button class="nav-item" data-view="equipment"><span>◇</span>儀器設備</button>
+        <button class="nav-item" data-view="workorders"><span>▣</span>服務工單</button>
+        <button class="nav-item" data-view="maintenance"><span>◷</span>保養排程</button>
+        <button class="nav-item" data-view="reports"><span>▥</span>工程師統計</button>
+      </nav>
+      <div class="sidebar-note"><span>DEMO DATA</span><p>展示操作不會儲存，也不會寄送 Email。</p></div>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="開啟功能選單" aria-expanded="false">☰</button>
+        <div class="global-search">
+          <label for="globalSearch">總覽快速查詢</label>
+          <input id="globalSearch" type="search" autocomplete="off" placeholder="搜尋單位、儀器、型號或財產編號">
+          <div class="suggestions" id="suggestions" hidden></div>
+        </div>
+        <a class="github-link" href="https://github.com/s960137/devicecare-demo" target="_blank" rel="noreferrer">GitHub 專案 ↗</a>
+        <div class="demo-user"><span>展示</span><strong>Demo Manager</strong></div>
+      </header>
+      <main id="app" tabindex="-1"></main>
+    </section>
+  </div>
+
+  <div class="modal" id="detailModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="關閉詳細資料">×</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
