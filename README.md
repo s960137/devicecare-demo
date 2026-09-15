@@ -32,4 +32,8 @@
 
 demo 直接由 GitHub Pages 提供固定網址，可安心打開。
 
+-- Author
+
+徐良慶 (Jasper Hsu)  Sales Engineer
+
 © 2026 紹氏儀器有限公司 DeviceCare
