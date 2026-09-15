@@ -30,6 +30,6 @@
 
 ## 技術形式
 
-demo採用原生 HTML、CSS 與 JavaScript，直接由 GitHub Pages 提供固定網址不需要後端。
+demo 直接由 GitHub Pages 提供固定網址，可安心打開。
 
 © 2026 紹氏儀器有限公司 DeviceCare
